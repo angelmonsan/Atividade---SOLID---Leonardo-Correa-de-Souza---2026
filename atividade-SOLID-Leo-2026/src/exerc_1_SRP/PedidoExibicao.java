@@ -1,0 +1,13 @@
+package exerc_1_SRP;
+
+public class PedidoExibicao {
+
+    public void exibir(Pedido pedido) {
+        System.out.println("\n--- INFORMAÇÕES DO PEDIDO ---");
+
+        System.out.println("ID: " + pedido.getId());
+        System.out.println("Cliente: " + pedido.getCliente());
+        System.out.println("Produto: " + pedido.getProduto());
+        System.out.printf("Valor: R$ %.2f%n", pedido.getValor());
+    }
+}
